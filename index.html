@@ -1,0 +1,47 @@
+<!--Guevara Arriaza Danys Emanuel   GA19014
+    Hernández Zavala Cynthia Nohemy HZ19004-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torres de Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
+</head>
+<body>
+    <!--Encabezado-->
+    <header>
+        <h1>Juego de las Torres de Hanoi</h1>
+        <h2>Por : Danys Guevara y Cynthia Hernández</h2>
+    </header>
+
+    <!--Cuerpo principal-->
+    <main>
+            <div class="center">
+                <div class="contenedor contenedor_uno">  <!--contendor que contiene los discos y la primer barra-->
+                    <div class="barra" ondragover="dragOver(event)" ondrop="dropSoltar(event)">
+                        <div class="disco" id="disco1"></div>
+                        <div class="disco" id="disco2"></div>
+                        <div class="disco" id="disco3"></div>
+                        <div class="disco" id="disco4"></div>
+                        <div class="disco" id="disco5"></div>
+                    </div>
+                </div>
+                <div class="contenedor contenedor_dos"> <!--contendor donde se encuenta la barra dos-->
+                    <div class="barra" ondragover="dragOver(event)" ondrop="dropSoltar(event)"></div>
+                </div>
+                <div class="contenedor contenedor_tres"> <!--contendor donde se encuenta la barra tres-->
+                    <div class="barra" ondragover="dragOver(event)" ondrop="dropSoltar(event)"></div>
+                </div>
+            <div class="base"></div>
+        </div>
+        
+    </main>
+</body>
+</html>
